@@ -1,0 +1,712 @@
+[08-Jun-2025 22:39:33 UTC] Error fetching configuration: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_vencimiento' doesn't exist
+[09-Jun-2025 14:19:48 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[09-Jun-2025 14:19:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ganagram.ph_leche' doesn't exist in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:249
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(249): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 249
+[09-Jun-2025 20:56:00 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[09-Jun-2025 20:56:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ganagram.ph_leche' doesn't exist in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:249
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(249): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 249
+[09-Jun-2025 20:59:14 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[09-Jun-2025 20:59:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ganagram.ph_leche' doesn't exist in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:249
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(249): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 249
+[09-Jun-2025 21:03:13 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[10-Jun-2025 01:45:28 UTC] Sales Query: SELECT 
+                YEAR(fecha_venta) AS year,
+                MONTH(fecha_venta) AS month,
+                SUM(peso_venta * precio_venta) AS total_revenue,
+                COUNT(*) AS total_sales,
+                SUM(peso_venta) as total_weight,
+                AVG(precio_venta) as avg_price
+              FROM porcino
+              WHERE 
+                fecha_venta IS NOT NULL AND 
+                precio_venta IS NOT NULL AND 
+                peso_venta IS NOT NULL AND
+                estatus = 'Vendido'
+              GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)
+              ORDER BY year ASC, month ASC
+[10-Jun-2025 01:45:28 UTC] Query Results: Array
+(
+    [0] => Array
+        (
+            [year] => 2024
+            [month] => 8
+            [total_revenue] => 1508
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 2.900000
+        )
+
+    [1] => Array
+        (
+            [year] => 2024
+            [month] => 9
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [2] => Array
+        (
+            [year] => 2024
+            [month] => 10
+            [total_revenue] => 1716
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.300000
+        )
+
+    [3] => Array
+        (
+            [year] => 2024
+            [month] => 11
+            [total_revenue] => 1612
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.100000
+        )
+
+    [4] => Array
+        (
+            [year] => 2024
+            [month] => 12
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [5] => Array
+        (
+            [year] => 2025
+            [month] => 1
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [6] => Array
+        (
+            [year] => 2025
+            [month] => 2
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [7] => Array
+        (
+            [year] => 2025
+            [month] => 3
+            [total_revenue] => 150
+            [total_sales] => 1
+            [total_weight] => 50
+            [avg_price] => 3.000000
+        )
+
+)
+
+[10-Jun-2025 15:18:20 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[10-Jun-2025 19:20:24 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jun-2025 06:05:02 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jun-2025 00:18:14 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jun-2025 04:01:10 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jun-2025 11:44:26 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jun-2025 13:35:39 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jun-2025 13:38:42 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jun-2025 13:40:51 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Jun-2025 23:56:06 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Jun-2025 23:56:12 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[16-Jun-2025 17:08:49 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[16-Jun-2025 18:08:21 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[17-Jun-2025 04:27:55 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[21-Jun-2025 16:42:16 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[22-Jun-2025 03:40:02 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[24-Jun-2025 07:09:49 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[25-Jun-2025 23:41:48 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[26-Jun-2025 16:54:56 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[26-Jun-2025 17:51:16 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[27-Jun-2025 03:01:45 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[27-Jun-2025 07:41:32 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jun-2025 08:27:13 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[01-Jul-2025 16:50:52 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[02-Jul-2025 01:55:06 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[02-Jul-2025 02:48:41 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[05-Jul-2025 10:23:11 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'v_vencimiento_destete' in 'SELECT'
+[06-Jul-2025 05:20:20 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[06-Jul-2025 21:26:19 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[06-Jul-2025 23:51:58 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[07-Jul-2025 14:17:39 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[08-Jul-2025 04:33:48 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[09-Jul-2025 04:54:16 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_mastitis' in 'SELECT'
+[09-Jul-2025 10:41:11 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[10-Jul-2025 01:53:34 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 07:40:29 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 07:40:51 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 08:51:26 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 08:51:27 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 11:17:31 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 16:31:44 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 19:37:04 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 20:05:28 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 23:32:25 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 23:32:25 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 23:37:24 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Jul-2025 23:37:29 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 19:56:04 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 19:56:08 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 20:13:03 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 20:13:13 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 20:55:55 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Jul-2025 20:56:12 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[13-Jul-2025 10:09:48 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[13-Jul-2025 10:10:10 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[13-Jul-2025 17:25:57 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jul-2025 07:41:25 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[14-Jul-2025 07:41:29 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Jul-2025 02:13:45 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[16-Jul-2025 18:13:07 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[17-Jul-2025 03:52:20 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[17-Jul-2025 04:13:37 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[17-Jul-2025 13:39:33 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 00:08:59 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 00:09:55 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 04:16:37 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 04:17:33 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 04:49:09 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 07:25:32 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Jul-2025 07:26:38 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[19-Jul-2025 22:36:57 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_coccidiosis' in 'SELECT'
+[21-Jul-2025 08:09:31 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[21-Jul-2025 08:11:38 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[21-Jul-2025 17:35:26 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[21-Jul-2025 20:52:49 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[23-Jul-2025 06:44:57 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[25-Jul-2025 02:08:14 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[25-Jul-2025 14:49:19 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[25-Jul-2025 22:13:35 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_erisipela' in 'SELECT'
+[27-Jul-2025 14:02:40 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 13:38:38 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 14:26:28 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 14:35:01 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 14:36:25 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 14:37:08 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[28-Jul-2025 14:42:11 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 16:40:00 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 19:56:48 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 19:59:07 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 20:00:58 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 20:26:02 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 20:34:41 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 21:52:50 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 21:52:57 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:52:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:03 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:53:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:04 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:53:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:05 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:53:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:05 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:53:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:06 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Macho' ORDER BY tagid ASC
+[30-Jul-2025 21:53:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:53:12 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Hembra' ORDER BY tagid ASC
+[30-Jul-2025 21:53:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 21:57:23 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 22:00:54 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino WHERE genero = 'Hembra' ORDER BY tagid ASC
+[30-Jul-2025 22:00:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? GROUP BY genero' at line 1 in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:84
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(84): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 84
+[30-Jul-2025 22:05:54 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PHP Warning:  Undefined array key "total_animals" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/porcino_report.php on line 835
+[30-Jul-2025 22:07:32 UTC] PDF generated successfully: /home/kt7djhj9ob5a/public_html/registroca.com/porcino/reports/Titan_3000_2025-07-30_220732.pdf
+[30-Jul-2025 22:10:44 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[30-Jul-2025 22:16:59 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[31-Jul-2025 00:57:34 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[31-Jul-2025 01:17:03 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[31-Jul-2025 01:18:40 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[03-Aug-2025 17:58:35 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[04-Aug-2025 16:28:06 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[04-Aug-2025 19:25:39 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[04-Aug-2025 20:13:11 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[04-Aug-2025 21:45:50 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[06-Aug-2025 10:36:04 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Aug-2025 20:34:45 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Aug-2025 20:34:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ph_concentrado_fecha_inicio' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:247
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(247): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 247
+[11-Aug-2025 20:37:08 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Aug-2025 20:37:08 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ph_concentrado_fecha_inicio' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:247
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(247): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 247
+[11-Aug-2025 20:41:22 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[11-Aug-2025 20:41:56 UTC] Error fetching concentrado expense data: Unknown column 'ph_concentrado_fecha' in 'SELECT'
+[11-Aug-2025 20:45:08 UTC] Error fetching melaza expense data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:45:08 UTC] Error fetching sal expense data: Unknown column 'ph_sal_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:45:08 UTC] Error fetching financial summary data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:45:09 UTC] Error fetching financial summary data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:47:20 UTC] Error fetching sal expense data: Unknown column 'ph_sal_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:47:20 UTC] Error fetching financial summary data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:47:21 UTC] Error fetching melaza expense data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:47:21 UTC] Error fetching financial summary data: Unknown column 'ph_melaza_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:49:12 UTC] Error fetching sal expense data: Unknown column 'ph_sal_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:49:12 UTC] Error fetching financial summary data: Unknown column 'ph_sal_fecha_fin' in 'SELECT'
+[11-Aug-2025 20:49:12 UTC] Error fetching financial summary data: Unknown column 'ph_sal_fecha_fin' in 'SELECT'
+[12-Aug-2025 01:40:41 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[12-Aug-2025 01:40:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ph_concentrado_fecha' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:247
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(247): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 247
+[13-Aug-2025 09:48:39 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[13-Aug-2025 09:48:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'ph_concentrado_fecha' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:247
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(247): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 247
+[13-Aug-2025 09:54:06 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Aug-2025 02:13:56 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Aug-2025 15:31:03 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Aug-2025 19:19:20 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Aug-2025 19:19:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'razas_nombre' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:2960
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(2960): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 2960
+[15-Aug-2025 19:20:13 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[15-Aug-2025 19:20:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'razas_nombre' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:2960
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(2960): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 2960
+[16-Aug-2025 21:38:36 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[16-Aug-2025 21:38:36 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'razas_nombre' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:2960
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(2960): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 2960
+[18-Aug-2025 14:35:34 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Aug-2025 14:35:34 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'razas_nombre' in 'SELECT' in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php:2960
+Stack trace:
+#0 /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php(2960): mysqli->query()
+#1 {main}
+  thrown in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 2960
+[18-Aug-2025 19:35:36 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[18-Aug-2025 19:35:36 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4245
+[18-Aug-2025 19:35:36 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4245
+[18-Aug-2025 19:35:36 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4245
+[18-Aug-2025 19:35:36 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4245
+[18-Aug-2025 19:35:36 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4245
+[20-Aug-2025 23:21:34 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[20-Aug-2025 23:21:34 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:21:34 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:21:34 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:21:34 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:21:34 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:23:21 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[20-Aug-2025 23:23:21 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:23:21 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:23:21 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:23:21 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:23:21 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:34:56 UTC] Executed query: SELECT id, tagid, nombre, genero, raza, etapa, grupo, estatus, fecha_nacimiento, image, image2, image3, video 
+        FROM porcino ORDER BY tagid ASC
+[20-Aug-2025 23:34:56 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:34:56 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:34:56 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:34:56 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:34:56 UTC] PHP Warning:  Undefined array key "razas_nombre" in /home/kt7djhj9ob5a/public_html/registroca.com/porcino/inventario_porcino.php on line 4238
+[20-Aug-2025 23:37:10 UTC] Sales Query: SELECT 
+                YEAR(fecha_venta) AS year,
+                MONTH(fecha_venta) AS month,
+                SUM(peso_venta * precio_venta) AS total_revenue,
+                COUNT(*) AS total_sales,
+                SUM(peso_venta) as total_weight,
+                AVG(precio_venta) as avg_price
+              FROM porcino
+              WHERE 
+                fecha_venta IS NOT NULL AND 
+                precio_venta IS NOT NULL AND 
+                peso_venta IS NOT NULL AND
+                estatus = 'Vendido'
+              GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)
+              ORDER BY year ASC, month ASC
+[20-Aug-2025 23:37:10 UTC] Query Results: Array
+(
+    [0] => Array
+        (
+            [year] => 2024
+            [month] => 8
+            [total_revenue] => 1508
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 2.900000
+        )
+
+    [1] => Array
+        (
+            [year] => 2024
+            [month] => 9
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [2] => Array
+        (
+            [year] => 2024
+            [month] => 10
+            [total_revenue] => 1716
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.300000
+        )
+
+    [3] => Array
+        (
+            [year] => 2024
+            [month] => 11
+            [total_revenue] => 1612
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.100000
+        )
+
+    [4] => Array
+        (
+            [year] => 2024
+            [month] => 12
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [5] => Array
+        (
+            [year] => 2025
+            [month] => 1
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [6] => Array
+        (
+            [year] => 2025
+            [month] => 2
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [7] => Array
+        (
+            [year] => 2025
+            [month] => 3
+            [total_revenue] => 150
+            [total_sales] => 1
+            [total_weight] => 50
+            [avg_price] => 3.000000
+        )
+
+)
+
+[20-Aug-2025 23:43:50 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_parto' in 'SELECT'
+[20-Aug-2025 23:46:18 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_parto' in 'SELECT'
+[20-Aug-2025 23:46:38 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_gestacion' in 'SELECT'
+[20-Aug-2025 23:46:44 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_gestacion' in 'SELECT'
+[20-Aug-2025 23:48:34 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_gestacion' in 'SELECT'
+[20-Aug-2025 23:55:52 UTC] Error fetching configuration: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_vencimiento' doesn't exist
+[20-Aug-2025 23:55:59 UTC] Error fetching configuration: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_vencimiento' doesn't exist
+[20-Aug-2025 23:56:06 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_parvovirosis' in 'SELECT'
+[20-Aug-2025 23:57:32 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_parvovirosis' in 'SELECT'
+[20-Aug-2025 23:57:42 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_leptopirosis' in 'SELECT'
+[20-Aug-2025 23:58:49 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_leptopirosis' in 'SELECT'
+[20-Aug-2025 23:58:55 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_erisipela' in 'SELECT'
+[21-Aug-2025 00:03:45 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_erisipela' in 'SELECT'
+[21-Aug-2025 00:04:57 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_coccidiosis' in 'SELECT'
+[21-Aug-2025 00:06:46 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_coccidiosis' in 'SELECT'
+[21-Aug-2025 00:06:54 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:06:54 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_neumonia' in 'SELECT'
+[21-Aug-2025 00:06:54 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:08:27 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:08:27 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_neumonia' in 'SELECT'
+[21-Aug-2025 00:08:27 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:08:38 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:08:38 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_neumonia' in 'SELECT'
+[21-Aug-2025 00:08:38 UTC] Error fetching vacunas: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ganagram.pc_neumonia' doesn't exist
+[21-Aug-2025 00:12:35 UTC] Sales Query: SELECT 
+                YEAR(fecha_venta) AS year,
+                MONTH(fecha_venta) AS month,
+                SUM(peso_venta * precio_venta) AS total_revenue,
+                COUNT(*) AS total_sales,
+                SUM(peso_venta) as total_weight,
+                AVG(precio_venta) as avg_price
+              FROM porcino
+              WHERE 
+                fecha_venta IS NOT NULL AND 
+                precio_venta IS NOT NULL AND 
+                peso_venta IS NOT NULL AND
+                estatus = 'Vendido'
+              GROUP BY YEAR(fecha_venta), MONTH(fecha_venta)
+              ORDER BY year ASC, month ASC
+[21-Aug-2025 00:12:35 UTC] Query Results: Array
+(
+    [0] => Array
+        (
+            [year] => 2024
+            [month] => 8
+            [total_revenue] => 1508
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 2.900000
+        )
+
+    [1] => Array
+        (
+            [year] => 2024
+            [month] => 10
+            [total_revenue] => 1716
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.300000
+        )
+
+    [2] => Array
+        (
+            [year] => 2024
+            [month] => 11
+            [total_revenue] => 1612
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.100000
+        )
+
+    [3] => Array
+        (
+            [year] => 2024
+            [month] => 12
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [4] => Array
+        (
+            [year] => 2025
+            [month] => 1
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [5] => Array
+        (
+            [year] => 2025
+            [month] => 2
+            [total_revenue] => 1560
+            [total_sales] => 1
+            [total_weight] => 520
+            [avg_price] => 3.000000
+        )
+
+    [6] => Array
+        (
+            [year] => 2025
+            [month] => 8
+            [total_revenue] => 1000
+            [total_sales] => 2
+            [total_weight] => 250
+            [avg_price] => 4.000000
+        )
+
+)
+
+[21-Aug-2025 00:17:04 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_gestacion' in 'SELECT'
+[21-Aug-2025 00:17:11 UTC] Error fetching configuration: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'p_vencimiento_parto' in 'SELECT'

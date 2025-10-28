@@ -1,0 +1,2902 @@
+[18-Aug-2025 21:11:12 Europe/Berlin] Attempting to connect to database...
+[18-Aug-2025 21:11:12 Europe/Berlin] Database connection established successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[18-Aug-2025 21:11:12 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => uploads/videos/67fc843901f92_1744602169.mp4
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[18-Aug-2025 21:11:12 Europe/Berlin] About to create PDF instance...
+[18-Aug-2025 21:11:12 Europe/Berlin] PDF class instantiated successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] PDF instance created successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] PDF metadata set successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] About to add first PDF page...
+[18-Aug-2025 21:11:12 Europe/Berlin] First PDF page added successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] About to query total active animals
+[18-Aug-2025 21:11:12 Europe/Berlin] Total active animals: 18
+[18-Aug-2025 21:11:12 Europe/Berlin] Total animals variable value: 18
+[18-Aug-2025 21:11:12 Europe/Berlin] About to initialize vaccination data array
+[18-Aug-2025 21:11:12 Europe/Berlin] Vaccination data array initialized. Keys: total_animals_groups, aftosa_count, aftosa_pending, aftosa_cost, cbr_count, cbr_pending, cbr_cost, ibr_count, ibr_pending, ibr_cost, carbunco_count, carbunco_pending, carbunco_cost, garrapatas_count, garrapatas_pending, garrapatas_cost, parasitos_count, parasitos_pending, parasitos_cost
+[18-Aug-2025 21:11:12 Europe/Berlin] Total animals in array: 18
+[18-Aug-2025 21:11:12 Europe/Berlin] About to create summary table. Vacc data keys: total_animals_groups, aftosa_count, aftosa_pending, aftosa_cost, cbr_count, cbr_pending, cbr_cost, ibr_count, ibr_pending, ibr_cost, carbunco_count, carbunco_pending, carbunco_cost, garrapatas_count, garrapatas_pending, garrapatas_cost, parasitos_count, parasitos_pending, parasitos_cost, aftosa_count_pending, cbr_count_pending, ibr_count_pending, carbunco_count_pending, garrapatas_count_pending, parasitos_count_pending
+[18-Aug-2025 21:11:12 Europe/Berlin] Total animals value: 18
+[18-Aug-2025 21:11:12 Europe/Berlin] Summary table data created successfully
+[18-Aug-2025 21:11:12 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_3000_2025-08-18_211112.pdf
+[18-Aug-2025 21:11:12 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[18-Aug-2025 21:11:12 Europe/Berlin] Directory exists: Yes
+[18-Aug-2025 21:11:12 Europe/Berlin] Directory writable: Yes
+[18-Aug-2025 21:11:12 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_3000_2025-08-18_211112.pdf
+[18-Aug-2025 21:11:12 Europe/Berlin] PDF output completed
+[18-Aug-2025 21:11:12 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_3000_2025-08-18_211112.pdf
+[18-Aug-2025 21:11:12 Europe/Berlin] File size: 503014 bytes
+[20-Aug-2025 15:34:30 Europe/Berlin] process_deceso.php called with: Array
+(
+    [action] => update
+    [tagid] => 102
+    [causa] => Palo cochinero
+    [fecha] => 2025-08-17
+)
+
+[20-Aug-2025 15:34:30 Europe/Berlin] Validated input data: tagid='102', causa='Palo cochinero', fecha='2025-08-17'
+[20-Aug-2025 15:34:30 Europe/Berlin] Animal found: ID=615, TagID='102', Status='Muerto'
+[20-Aug-2025 15:34:30 Europe/Berlin] Update values: causa='Palo cochinero', fecha='2025-08-17', tagid='102'
+[20-Aug-2025 15:34:30 Europe/Berlin] Current values before update: Array
+(
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [estatus] => Muerto
+)
+
+[20-Aug-2025 15:34:30 Europe/Berlin] UPDATE query executed. Rows affected: 0
+[20-Aug-2025 15:34:30 Europe/Berlin] No update needed - values are already the same
+[20-Aug-2025 15:35:36 Europe/Berlin] process_deceso.php called with: Array
+(
+    [action] => update
+    [tagid] => 23211
+    [causa] => Infarto
+    [fecha] => 2025-08-20
+)
+
+[20-Aug-2025 15:35:36 Europe/Berlin] Validated input data: tagid='23211', causa='Infarto', fecha='2025-08-20'
+[20-Aug-2025 15:35:36 Europe/Berlin] Animal found: ID=648, TagID='23211', Status='Activo'
+[20-Aug-2025 15:35:36 Europe/Berlin] Update values: causa='Infarto', fecha='2025-08-20', tagid='23211'
+[20-Aug-2025 15:35:36 Europe/Berlin] Current values before update: Array
+(
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [estatus] => Activo
+)
+
+[20-Aug-2025 15:35:36 Europe/Berlin] UPDATE query executed. Rows affected: 1
+[20-Aug-2025 15:35:36 Europe/Berlin] Values after update: Array
+(
+    [deceso_causa] => Infarto
+    [deceso_fecha] => 2025-08-20
+    [estatus] => Muerto
+)
+
+[25-Sep-2025 19:28:39 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 19:47:11 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 19:51:24 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 19:51:24 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 19:51:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PDOStatement::bind_param() in C:\xampp\htdocs\porcino\porcino_report.php:148
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\porcino\porcino_report.php on line 148
+[25-Sep-2025 20:09:13 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:09:13 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:09:13 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:09:13 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:09:13 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:09:13 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:09:13 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:09:13 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:09:13 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:09:13 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:09:13 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'porcino.ph_aftosa' doesn't exist in C:\xampp\htdocs\porcino\porcino_report.php:739
+Stack trace:
+#0 C:\xampp\htdocs\porcino\porcino_report.php(739): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\porcino\porcino_report.php on line 739
+[25-Sep-2025 20:12:03 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:12:03 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:12:03 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:12:03 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:12:03 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:12:03 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:12:03 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:12:03 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:12:03 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:12:03 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:12:03 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201203.pdf
+[25-Sep-2025 20:12:03 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 20:12:03 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 20:12:03 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 20:12:03 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201203.pdf
+[25-Sep-2025 20:12:03 Europe/Berlin] PDF output completed
+[25-Sep-2025 20:12:03 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201203.pdf
+[25-Sep-2025 20:12:03 Europe/Berlin] File size: 396367 bytes
+[25-Sep-2025 20:13:57 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:13:57 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:13:57 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:13:57 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:13:57 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:13:57 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:13:57 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:13:57 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:13:57 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:13:57 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:13:57 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201357.pdf
+[25-Sep-2025 20:13:57 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 20:13:57 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 20:13:57 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 20:13:57 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201357.pdf
+[25-Sep-2025 20:13:57 Europe/Berlin] PDF output completed
+[25-Sep-2025 20:13:57 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201357.pdf
+[25-Sep-2025 20:13:57 Europe/Berlin] File size: 404334 bytes
+[25-Sep-2025 20:18:02 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:18:02 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:18:02 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:18:02 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:18:02 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:18:02 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:18:02 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:18:02 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:18:02 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:18:02 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:19:13 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:19:13 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:19:13 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:19:13 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:19:13 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:19:13 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201913.pdf
+[25-Sep-2025 20:19:13 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 20:19:13 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 20:19:13 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 20:19:13 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201913.pdf
+[25-Sep-2025 20:19:13 Europe/Berlin] PDF output completed
+[25-Sep-2025 20:19:13 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_201913.pdf
+[25-Sep-2025 20:19:13 Europe/Berlin] File size: 404996 bytes
+[25-Sep-2025 20:21:06 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:21:06 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:21:06 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:21:06 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:21:06 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:21:06 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:21:06 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:21:06 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:21:06 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:21:06 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:21:06 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_202106.pdf
+[25-Sep-2025 20:21:06 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 20:21:06 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 20:21:06 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 20:21:06 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_202106.pdf
+[25-Sep-2025 20:21:06 Europe/Berlin] PDF output completed
+[25-Sep-2025 20:21:06 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_202106.pdf
+[25-Sep-2025 20:21:06 Europe/Berlin] File size: 405704 bytes
+[25-Sep-2025 20:41:12 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:41:12 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:41:12 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:41:12 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:41:12 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:41:12 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:41:12 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:41:12 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:41:12 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:41:12 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:41:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'porcino.ph_aftosa' doesn't exist in C:\xampp\htdocs\porcino\porcino_report.php:783
+Stack trace:
+#0 C:\xampp\htdocs\porcino\porcino_report.php(783): PDOStatement->execute(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\porcino\porcino_report.php on line 783
+[25-Sep-2025 20:55:25 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:55:25 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:55:25 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:55:25 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:55:25 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:55:25 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:55:25 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:55:25 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:55:25 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:55:25 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 20:56:39 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 20:56:39 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 20:56:39 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 20:56:39 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 20:56:39 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 20:56:39 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_205639.pdf
+[25-Sep-2025 20:56:39 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 20:56:39 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 20:56:39 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 20:56:39 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_205639.pdf
+[25-Sep-2025 20:56:39 Europe/Berlin] PDF output completed
+[25-Sep-2025 20:56:39 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_205639.pdf
+[25-Sep-2025 20:56:39 Europe/Berlin] File size: 411512 bytes
+[25-Sep-2025 21:04:42 Europe/Berlin] Attempting to connect to database...
+[25-Sep-2025 21:04:42 Europe/Berlin] Database connection established successfully
+[25-Sep-2025 21:04:42 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[25-Sep-2025 21:04:42 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[25-Sep-2025 21:04:42 Europe/Berlin] About to create PDF instance...
+[25-Sep-2025 21:04:42 Europe/Berlin] PDF class instantiated successfully
+[25-Sep-2025 21:04:42 Europe/Berlin] PDF instance created successfully
+[25-Sep-2025 21:04:42 Europe/Berlin] PDF metadata set successfully
+[25-Sep-2025 21:04:42 Europe/Berlin] About to add first PDF page...
+[25-Sep-2025 21:04:42 Europe/Berlin] First PDF page added successfully
+[25-Sep-2025 21:04:43 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_210443.pdf
+[25-Sep-2025 21:04:43 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[25-Sep-2025 21:04:43 Europe/Berlin] Directory exists: Yes
+[25-Sep-2025 21:04:43 Europe/Berlin] Directory writable: Yes
+[25-Sep-2025 21:04:43 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_210443.pdf
+[25-Sep-2025 21:04:43 Europe/Berlin] PDF output completed
+[25-Sep-2025 21:04:43 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-25_210443.pdf
+[25-Sep-2025 21:04:43 Europe/Berlin] File size: 413002 bytes
+[26-Sep-2025 00:22:17 Europe/Berlin] Attempting to connect to database...
+[26-Sep-2025 00:22:17 Europe/Berlin] Database connection established successfully
+[26-Sep-2025 00:22:17 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[26-Sep-2025 00:22:17 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[26-Sep-2025 00:22:17 Europe/Berlin] About to create PDF instance...
+[26-Sep-2025 00:22:17 Europe/Berlin] PDF class instantiated successfully
+[26-Sep-2025 00:22:17 Europe/Berlin] PDF instance created successfully
+[26-Sep-2025 00:22:17 Europe/Berlin] PDF metadata set successfully
+[26-Sep-2025 00:22:17 Europe/Berlin] About to add first PDF page...
+[26-Sep-2025 00:22:17 Europe/Berlin] First PDF page added successfully
+[26-Sep-2025 00:22:17 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-26_002217.pdf
+[26-Sep-2025 00:22:17 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[26-Sep-2025 00:22:17 Europe/Berlin] Directory exists: Yes
+[26-Sep-2025 00:22:17 Europe/Berlin] Directory writable: Yes
+[26-Sep-2025 00:22:17 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-26_002217.pdf
+[26-Sep-2025 00:22:17 Europe/Berlin] PDF output completed
+[26-Sep-2025 00:22:17 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-26_002217.pdf
+[26-Sep-2025 00:22:17 Europe/Berlin] File size: 529077 bytes
+[26-Sep-2025 23:54:00 Europe/Berlin] Attempting to connect to database...
+[26-Sep-2025 23:54:00 Europe/Berlin] Database connection established successfully
+[26-Sep-2025 23:54:00 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[26-Sep-2025 23:54:00 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[26-Sep-2025 23:54:00 Europe/Berlin] About to create PDF instance...
+[26-Sep-2025 23:54:00 Europe/Berlin] PDF class instantiated successfully
+[26-Sep-2025 23:54:00 Europe/Berlin] PDF instance created successfully
+[26-Sep-2025 23:54:00 Europe/Berlin] PDF metadata set successfully
+[26-Sep-2025 23:54:00 Europe/Berlin] About to add first PDF page...
+[26-Sep-2025 23:54:00 Europe/Berlin] First PDF page added successfully
+[26-Sep-2025 23:54:00 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-26_235400.pdf
+[26-Sep-2025 23:54:00 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[26-Sep-2025 23:54:00 Europe/Berlin] Directory exists: Yes
+[26-Sep-2025 23:54:00 Europe/Berlin] Directory writable: Yes
+[26-Sep-2025 23:54:00 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-26_235400.pdf
+[26-Sep-2025 23:54:00 Europe/Berlin] PDF output completed
+[26-Sep-2025 23:54:00 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-26_235400.pdf
+[26-Sep-2025 23:54:00 Europe/Berlin] File size: 413001 bytes
+[27-Sep-2025 22:49:53 Europe/Berlin] Attempting to connect to database...
+[27-Sep-2025 22:49:53 Europe/Berlin] Database connection established successfully
+[27-Sep-2025 22:49:53 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[27-Sep-2025 22:49:53 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[27-Sep-2025 22:49:53 Europe/Berlin] About to create PDF instance...
+[27-Sep-2025 22:49:53 Europe/Berlin] PDF class instantiated successfully
+[27-Sep-2025 22:49:53 Europe/Berlin] PDF instance created successfully
+[27-Sep-2025 22:49:53 Europe/Berlin] PDF metadata set successfully
+[27-Sep-2025 22:49:53 Europe/Berlin] About to add first PDF page...
+[27-Sep-2025 22:49:53 Europe/Berlin] First PDF page added successfully
+[27-Sep-2025 22:49:53 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-27_224953.pdf
+[27-Sep-2025 22:49:53 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[27-Sep-2025 22:49:53 Europe/Berlin] Directory exists: Yes
+[27-Sep-2025 22:49:53 Europe/Berlin] Directory writable: Yes
+[27-Sep-2025 22:49:53 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-27_224953.pdf
+[27-Sep-2025 22:49:53 Europe/Berlin] PDF output completed
+[27-Sep-2025 22:49:53 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-09-27_224953.pdf
+[27-Sep-2025 22:49:53 Europe/Berlin] File size: 413002 bytes
+[29-Sep-2025 21:24:43 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:24:43 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:24:43 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:24:43 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:24:43 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:24:43 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:24:43 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:24:43 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:24:43 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:24:43 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:24:43 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212443.pdf
+[29-Sep-2025 21:24:43 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:24:43 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:24:43 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:24:43 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212443.pdf
+[29-Sep-2025 21:24:43 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:24:43 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212443.pdf
+[29-Sep-2025 21:24:43 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:25:26 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:25:26 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:25:26 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:25:26 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:25:26 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:25:26 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:25:26 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:25:26 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:25:26 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:25:26 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:25:26 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212526.pdf
+[29-Sep-2025 21:25:26 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:25:26 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:25:26 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:25:26 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212526.pdf
+[29-Sep-2025 21:25:26 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:25:26 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212526.pdf
+[29-Sep-2025 21:25:26 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:27:59 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:27:59 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:27:59 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:27:59 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:27:59 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:27:59 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:27:59 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:27:59 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:27:59 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:27:59 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:27:59 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212759.pdf
+[29-Sep-2025 21:27:59 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:27:59 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:27:59 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:27:59 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212759.pdf
+[29-Sep-2025 21:27:59 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:27:59 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_212759.pdf
+[29-Sep-2025 21:27:59 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:31:04 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:31:04 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:31:04 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:31:04 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:31:04 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:31:04 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:31:04 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:31:04 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:31:04 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:31:04 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:31:04 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213104.pdf
+[29-Sep-2025 21:31:04 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:31:04 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:31:04 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:31:04 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213104.pdf
+[29-Sep-2025 21:31:04 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:31:04 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213104.pdf
+[29-Sep-2025 21:31:04 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:33:43 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:33:43 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:33:43 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:33:43 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:33:43 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:33:43 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:33:43 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:33:43 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:33:43 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:33:43 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:33:43 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213343.pdf
+[29-Sep-2025 21:33:43 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:33:43 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:33:43 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:33:43 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213343.pdf
+[29-Sep-2025 21:33:43 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:33:43 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213343.pdf
+[29-Sep-2025 21:33:43 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:35:28 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:35:28 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:35:28 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[29-Sep-2025 21:35:28 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:35:28 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:35:28 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:35:28 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:35:28 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:35:28 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:35:28 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:35:28 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_213528.pdf
+[29-Sep-2025 21:35:28 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:35:28 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:35:28 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:35:28 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_213528.pdf
+[29-Sep-2025 21:35:28 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:35:28 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_213528.pdf
+[29-Sep-2025 21:35:28 Europe/Berlin] File size: 529078 bytes
+[29-Sep-2025 21:36:20 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:36:20 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:36:20 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:36:20 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:36:20 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:36:20 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:36:20 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:36:20 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:36:20 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:36:20 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:36:20 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213620.pdf
+[29-Sep-2025 21:36:20 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:36:20 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:36:20 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:36:20 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213620.pdf
+[29-Sep-2025 21:36:20 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:36:20 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213620.pdf
+[29-Sep-2025 21:36:20 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:38:57 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:38:57 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:38:57 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[29-Sep-2025 21:38:57 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:38:57 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:38:57 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:38:57 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:38:57 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:38:57 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:38:57 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:38:57 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213857.pdf
+[29-Sep-2025 21:38:57 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:38:57 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:38:57 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:38:57 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213857.pdf
+[29-Sep-2025 21:38:57 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:38:57 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-29_213857.pdf
+[29-Sep-2025 21:38:57 Europe/Berlin] File size: 296604 bytes
+[29-Sep-2025 21:43:16 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:43:16 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:43:16 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[29-Sep-2025 21:43:16 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:43:16 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:43:16 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:43:16 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:43:16 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:43:16 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:43:16 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:43:16 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214316.pdf
+[29-Sep-2025 21:43:16 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:43:16 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:43:16 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:43:16 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214316.pdf
+[29-Sep-2025 21:43:16 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:43:16 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214316.pdf
+[29-Sep-2025 21:43:16 Europe/Berlin] File size: 529075 bytes
+[29-Sep-2025 21:48:26 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 21:48:26 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 21:48:26 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[29-Sep-2025 21:48:26 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 21:48:26 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 21:48:26 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 21:48:26 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 21:48:26 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 21:48:26 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 21:48:26 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 21:48:26 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214826.pdf
+[29-Sep-2025 21:48:26 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 21:48:26 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 21:48:26 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 21:48:26 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214826.pdf
+[29-Sep-2025 21:48:26 Europe/Berlin] PDF output completed
+[29-Sep-2025 21:48:26 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_214826.pdf
+[29-Sep-2025 21:48:26 Europe/Berlin] File size: 529078 bytes
+[29-Sep-2025 23:28:09 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 23:28:09 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 23:28:09 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[29-Sep-2025 23:28:09 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 23:28:09 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 23:28:09 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 23:28:09 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 23:28:09 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 23:28:09 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 23:28:09 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 23:28:09 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_232809.pdf
+[29-Sep-2025 23:28:09 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 23:28:09 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 23:28:09 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 23:28:09 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_232809.pdf
+[29-Sep-2025 23:28:09 Europe/Berlin] PDF output completed
+[29-Sep-2025 23:28:09 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_232809.pdf
+[29-Sep-2025 23:28:09 Europe/Berlin] File size: 529078 bytes
+[29-Sep-2025 23:31:19 Europe/Berlin] Attempting to connect to database...
+[29-Sep-2025 23:31:19 Europe/Berlin] Database connection established successfully
+[29-Sep-2025 23:31:19 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[29-Sep-2025 23:31:19 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[29-Sep-2025 23:31:19 Europe/Berlin] About to create PDF instance...
+[29-Sep-2025 23:31:19 Europe/Berlin] PDF class instantiated successfully
+[29-Sep-2025 23:31:19 Europe/Berlin] PDF instance created successfully
+[29-Sep-2025 23:31:19 Europe/Berlin] PDF metadata set successfully
+[29-Sep-2025 23:31:19 Europe/Berlin] About to add first PDF page...
+[29-Sep-2025 23:31:19 Europe/Berlin] First PDF page added successfully
+[29-Sep-2025 23:31:19 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_233119.pdf
+[29-Sep-2025 23:31:19 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[29-Sep-2025 23:31:19 Europe/Berlin] Directory exists: Yes
+[29-Sep-2025 23:31:19 Europe/Berlin] Directory writable: Yes
+[29-Sep-2025 23:31:19 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_233119.pdf
+[29-Sep-2025 23:31:19 Europe/Berlin] PDF output completed
+[29-Sep-2025 23:31:19 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-29_233119.pdf
+[29-Sep-2025 23:31:19 Europe/Berlin] File size: 529078 bytes
+[30-Sep-2025 00:05:58 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:05:58 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:05:58 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[30-Sep-2025 00:05:58 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:05:58 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:05:58 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:05:58 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:05:58 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:05:58 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:05:58 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:05:58 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_000558.pdf
+[30-Sep-2025 00:05:58 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:05:58 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:05:58 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:05:58 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_000558.pdf
+[30-Sep-2025 00:05:58 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:05:58 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_000558.pdf
+[30-Sep-2025 00:05:58 Europe/Berlin] File size: 529075 bytes
+[30-Sep-2025 00:10:31 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:10:31 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:10:31 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:10:31 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:10:31 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:10:31 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:10:31 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:10:31 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:10:31 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:10:31 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:10:31 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001031.pdf
+[30-Sep-2025 00:10:31 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:10:31 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:10:31 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:10:31 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001031.pdf
+[30-Sep-2025 00:10:31 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:10:31 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001031.pdf
+[30-Sep-2025 00:10:31 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:13:05 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:13:05 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:13:05 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:13:05 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:13:05 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:13:05 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:13:05 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:13:05 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:13:05 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:13:05 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:13:05 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001305.pdf
+[30-Sep-2025 00:13:05 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:13:05 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:13:05 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:13:05 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001305.pdf
+[30-Sep-2025 00:13:05 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:13:05 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001305.pdf
+[30-Sep-2025 00:13:05 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:15:54 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:15:54 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:15:54 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:15:54 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:15:54 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:15:54 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:15:54 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:15:54 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:15:54 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:15:54 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:15:54 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001554.pdf
+[30-Sep-2025 00:15:54 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:15:54 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:15:54 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:15:54 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001554.pdf
+[30-Sep-2025 00:15:54 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:15:54 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001554.pdf
+[30-Sep-2025 00:15:54 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:17:40 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:17:40 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:17:40 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:17:40 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:17:40 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:17:40 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:17:40 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:17:40 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:17:40 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:17:40 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:17:40 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001740.pdf
+[30-Sep-2025 00:17:40 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:17:40 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:17:40 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:17:40 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001740.pdf
+[30-Sep-2025 00:17:40 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:17:40 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_001740.pdf
+[30-Sep-2025 00:17:40 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:23:01 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:23:01 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:23:01 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:23:01 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:23:01 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:23:01 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:23:01 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:23:01 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:23:01 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:23:02 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:23:02 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002302.pdf
+[30-Sep-2025 00:23:02 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:23:02 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:23:02 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:23:02 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002302.pdf
+[30-Sep-2025 00:23:02 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:23:02 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002302.pdf
+[30-Sep-2025 00:23:02 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:25:56 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:25:56 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:25:56 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:25:56 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:25:56 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:25:56 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:25:56 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:25:56 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:25:56 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:25:56 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:25:56 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002556.pdf
+[30-Sep-2025 00:25:56 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:25:56 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:25:56 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:25:56 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002556.pdf
+[30-Sep-2025 00:25:56 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:25:56 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002556.pdf
+[30-Sep-2025 00:25:56 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 00:29:08 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 00:29:08 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 00:29:08 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 00:29:08 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 00:29:08 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 00:29:08 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 00:29:08 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 00:29:08 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 00:29:08 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 00:29:08 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 00:29:08 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002908.pdf
+[30-Sep-2025 00:29:08 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 00:29:08 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 00:29:08 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 00:29:08 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002908.pdf
+[30-Sep-2025 00:29:08 Europe/Berlin] PDF output completed
+[30-Sep-2025 00:29:08 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_002908.pdf
+[30-Sep-2025 00:29:08 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 20:39:12 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 20:39:12 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 20:39:12 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 20:39:12 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 20:39:12 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 20:39:12 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 20:39:12 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 20:39:12 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 20:39:12 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 20:39:12 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 20:39:12 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_203912.pdf
+[30-Sep-2025 20:39:12 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 20:39:12 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 20:39:12 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 20:39:12 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_203912.pdf
+[30-Sep-2025 20:39:12 Europe/Berlin] PDF output completed
+[30-Sep-2025 20:39:12 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_203912.pdf
+[30-Sep-2025 20:39:12 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 20:59:44 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 20:59:44 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 20:59:44 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 20:59:44 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 20:59:44 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 20:59:44 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 20:59:44 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 20:59:44 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 20:59:44 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 20:59:44 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 20:59:44 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_205944.pdf
+[30-Sep-2025 20:59:44 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 20:59:44 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 20:59:44 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 20:59:44 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_205944.pdf
+[30-Sep-2025 20:59:44 Europe/Berlin] PDF output completed
+[30-Sep-2025 20:59:44 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_205944.pdf
+[30-Sep-2025 20:59:44 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:00:42 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:00:42 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:00:42 Europe/Berlin] Animal data retrieved successfully: Choncha (103)
+[30-Sep-2025 21:00:42 Europe/Berlin] Animal data details: Array
+(
+    [id] => 616
+    [image] => uploads/Cerdo15-removebg-preview.png
+    [image2] => uploads/67fc78d308cf1_1744599251.jpg
+    [image3] => uploads/67fc78d309098_1744599251.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2025-03-01
+    [peso_nacimiento] => 6.00
+    [especie] => Porcino
+    [nombre] => Choncha
+    [tagid] => 103
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Yorkshire
+    [grupo] => Fase 2
+    [estatus] => Vendido
+    [etapa] => Finalizacion
+    [edad] => 2
+    [fecha_compra] => 2024-10-01
+    [peso_compra] => 100.00
+    [precio_compra] => 3.03
+    [fecha_venta] => 2025-02-08
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:00:42 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:00:42 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:00:42 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:00:42 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:00:42 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:00:42 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:00:42 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Choncha_103_2025-09-30_210042.pdf
+[30-Sep-2025 21:00:42 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:00:42 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:00:42 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:00:42 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Choncha_103_2025-09-30_210042.pdf
+[30-Sep-2025 21:00:42 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:00:42 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Choncha_103_2025-09-30_210042.pdf
+[30-Sep-2025 21:00:42 Europe/Berlin] File size: 544798 bytes
+[30-Sep-2025 21:21:39 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:21:39 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:21:39 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:21:39 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:21:39 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:21:39 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:21:39 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:21:39 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:21:39 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:21:39 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:21:39 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212139.pdf
+[30-Sep-2025 21:21:39 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:21:39 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:21:39 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:21:39 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212139.pdf
+[30-Sep-2025 21:21:39 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:21:39 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212139.pdf
+[30-Sep-2025 21:21:39 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:25:36 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:25:36 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:25:36 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:25:36 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:25:36 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:25:36 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:25:36 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:25:36 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:25:36 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:25:36 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:25:36 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212536.pdf
+[30-Sep-2025 21:25:36 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:25:36 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:25:36 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:25:36 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212536.pdf
+[30-Sep-2025 21:25:36 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:25:36 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212536.pdf
+[30-Sep-2025 21:25:36 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:27:44 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:27:44 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:27:44 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:27:44 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:27:44 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:27:44 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:27:44 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:27:44 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:27:44 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:27:44 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:27:44 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212744.pdf
+[30-Sep-2025 21:27:44 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:27:44 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:27:44 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:27:44 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212744.pdf
+[30-Sep-2025 21:27:44 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:27:44 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_212744.pdf
+[30-Sep-2025 21:27:44 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:39:15 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:39:15 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:39:15 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:39:15 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:39:15 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:39:15 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:39:15 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:39:15 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:39:15 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:39:15 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:39:15 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_213915.pdf
+[30-Sep-2025 21:39:15 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:39:15 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:39:15 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:39:15 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_213915.pdf
+[30-Sep-2025 21:39:15 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:39:15 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_213915.pdf
+[30-Sep-2025 21:39:15 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:44:47 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:44:47 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:44:47 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:44:47 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:44:47 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:44:47 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:44:47 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:44:47 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:44:47 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:44:47 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:44:47 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_214447.pdf
+[30-Sep-2025 21:44:47 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:44:47 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:44:47 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:44:47 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_214447.pdf
+[30-Sep-2025 21:44:47 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:44:47 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_214447.pdf
+[30-Sep-2025 21:44:47 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:45:54 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:45:54 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:45:54 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[30-Sep-2025 21:45:54 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:45:54 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:45:54 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:45:54 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:45:54 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:45:54 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:45:54 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:45:54 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_214554.pdf
+[30-Sep-2025 21:45:54 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:45:54 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:45:54 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:45:54 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_214554.pdf
+[30-Sep-2025 21:45:54 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:45:54 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-09-30_214554.pdf
+[30-Sep-2025 21:45:54 Europe/Berlin] File size: 529075 bytes
+[30-Sep-2025 21:51:01 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:51:01 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:51:01 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:51:01 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:51:01 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:51:01 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:51:01 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:51:01 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:51:01 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:51:01 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:51:01 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215101.pdf
+[30-Sep-2025 21:51:01 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:51:01 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:51:01 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:51:01 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215101.pdf
+[30-Sep-2025 21:51:01 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:51:01 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215101.pdf
+[30-Sep-2025 21:51:01 Europe/Berlin] File size: 296603 bytes
+[30-Sep-2025 21:53:12 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:53:12 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:53:12 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:53:12 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:53:12 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:53:12 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:53:12 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:53:12 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:53:12 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:53:12 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:53:12 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215312.pdf
+[30-Sep-2025 21:53:12 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:53:12 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:53:12 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:53:12 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215312.pdf
+[30-Sep-2025 21:53:12 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:53:12 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215312.pdf
+[30-Sep-2025 21:53:12 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:54:25 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:54:25 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:54:25 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:54:25 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:54:25 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:54:25 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:54:25 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:54:25 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:54:25 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:54:25 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:54:25 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215425.pdf
+[30-Sep-2025 21:54:25 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:54:25 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:54:25 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:54:25 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215425.pdf
+[30-Sep-2025 21:54:25 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:54:25 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215425.pdf
+[30-Sep-2025 21:54:25 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:56:41 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:56:41 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:56:41 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:56:41 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:56:41 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:56:41 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:56:41 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:56:41 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:56:41 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:56:41 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:56:41 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215641.pdf
+[30-Sep-2025 21:56:41 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:56:41 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:56:41 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:56:41 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215641.pdf
+[30-Sep-2025 21:56:41 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:56:41 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215641.pdf
+[30-Sep-2025 21:56:41 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 21:57:49 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 21:57:49 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 21:57:49 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 21:57:49 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 21:57:49 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 21:57:49 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 21:57:49 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 21:57:49 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 21:57:49 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 21:57:49 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 21:57:49 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215749.pdf
+[30-Sep-2025 21:57:49 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 21:57:49 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 21:57:49 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 21:57:49 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215749.pdf
+[30-Sep-2025 21:57:49 Europe/Berlin] PDF output completed
+[30-Sep-2025 21:57:49 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_215749.pdf
+[30-Sep-2025 21:57:49 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 22:00:07 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 22:00:07 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 22:00:07 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 22:00:07 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 22:00:07 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 22:00:07 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 22:00:07 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 22:00:07 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 22:00:07 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 22:00:07 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 22:00:07 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220007.pdf
+[30-Sep-2025 22:00:07 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 22:00:07 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 22:00:07 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 22:00:07 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220007.pdf
+[30-Sep-2025 22:00:07 Europe/Berlin] PDF output completed
+[30-Sep-2025 22:00:07 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220007.pdf
+[30-Sep-2025 22:00:07 Europe/Berlin] File size: 296602 bytes
+[30-Sep-2025 22:02:55 Europe/Berlin] Attempting to connect to database...
+[30-Sep-2025 22:02:55 Europe/Berlin] Database connection established successfully
+[30-Sep-2025 22:02:55 Europe/Berlin] Animal data retrieved successfully: Piggy (3000)
+[30-Sep-2025 22:02:55 Europe/Berlin] Animal data details: Array
+(
+    [id] => 593
+    [image] => uploads/animal_593_1735844624.jpg
+    [image2] => uploads/67fc76e219386_1744598754.jpg
+    [image3] => uploads/67fc76e2198dd_1744598754.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2024-05-01
+    [peso_nacimiento] => 61.00
+    [especie] => Porcino
+    [nombre] => Piggy
+    [tagid] => 3000
+    [genero] => Hembra
+    [clase] => Lechona
+    [raza] => Landrace
+    [grupo] => Vacias
+    [estatus] => Descartado
+    [etapa] => Inicio
+    [edad] => 14
+    [fecha_compra] => 2024-06-01
+    [peso_compra] => 115.00
+    [precio_compra] => 3.50
+    [fecha_venta] => 2025-08-17
+    [peso_venta] => 200.00
+    [precio_venta] => 5.00
+    [deceso_causa] => 
+    [deceso_fecha] => 
+    [descarte_fecha] => 2025-08-17
+    [descarte_peso] => 200.00
+    [descarte_precio] => 4.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[30-Sep-2025 22:02:55 Europe/Berlin] About to create PDF instance...
+[30-Sep-2025 22:02:55 Europe/Berlin] PDF class instantiated successfully
+[30-Sep-2025 22:02:55 Europe/Berlin] PDF instance created successfully
+[30-Sep-2025 22:02:55 Europe/Berlin] PDF metadata set successfully
+[30-Sep-2025 22:02:55 Europe/Berlin] About to add first PDF page...
+[30-Sep-2025 22:02:55 Europe/Berlin] First PDF page added successfully
+[30-Sep-2025 22:02:56 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220256.pdf
+[30-Sep-2025 22:02:56 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[30-Sep-2025 22:02:56 Europe/Berlin] Directory exists: Yes
+[30-Sep-2025 22:02:56 Europe/Berlin] Directory writable: Yes
+[30-Sep-2025 22:02:56 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220256.pdf
+[30-Sep-2025 22:02:56 Europe/Berlin] PDF output completed
+[30-Sep-2025 22:02:56 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Piggy_3000_2025-09-30_220256.pdf
+[30-Sep-2025 22:02:56 Europe/Berlin] File size: 296602 bytes
+[01-Oct-2025 13:47:34 Europe/Berlin] Attempting to connect to database...
+[01-Oct-2025 13:47:34 Europe/Berlin] Database connection established successfully
+[01-Oct-2025 13:47:34 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[01-Oct-2025 13:47:34 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[01-Oct-2025 13:47:34 Europe/Berlin] About to create PDF instance...
+[01-Oct-2025 13:47:34 Europe/Berlin] PDF class instantiated successfully
+[01-Oct-2025 13:47:34 Europe/Berlin] PDF instance created successfully
+[01-Oct-2025 13:47:34 Europe/Berlin] PDF metadata set successfully
+[01-Oct-2025 13:47:34 Europe/Berlin] About to add first PDF page...
+[01-Oct-2025 13:47:34 Europe/Berlin] First PDF page added successfully
+[01-Oct-2025 13:47:34 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-01_134734.pdf
+[01-Oct-2025 13:47:34 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[01-Oct-2025 13:47:34 Europe/Berlin] Directory exists: Yes
+[01-Oct-2025 13:47:34 Europe/Berlin] Directory writable: Yes
+[01-Oct-2025 13:47:34 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-01_134734.pdf
+[01-Oct-2025 13:47:34 Europe/Berlin] PDF output completed
+[01-Oct-2025 13:47:34 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-01_134734.pdf
+[01-Oct-2025 13:47:34 Europe/Berlin] File size: 413001 bytes
+[03-Oct-2025 22:14:16 Europe/Berlin] Attempting to connect to database...
+[03-Oct-2025 22:14:16 Europe/Berlin] Database connection established successfully
+[03-Oct-2025 22:14:16 Europe/Berlin] Animal data retrieved successfully: Titan (102)
+[03-Oct-2025 22:14:16 Europe/Berlin] Animal data details: Array
+(
+    [id] => 615
+    [image] => uploads/animal_615_1735844648.jpg
+    [image2] => uploads/67fc782d08b2c_1744599085.png
+    [image3] => uploads/67fc782d08efb_1744599085.jpeg
+    [video] => 
+    [fecha_nacimiento] => 2023-07-31
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Titan
+    [tagid] => 102
+    [genero] => Macho
+    [clase] => Cerdo
+    [raza] => Pietrain
+    [grupo] => Engorde
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 9
+    [fecha_compra] => 2024-04-04
+    [peso_compra] => 100.00
+    [precio_compra] => 3.00
+    [fecha_venta] => 2025-03-01
+    [peso_venta] => 50.00
+    [precio_venta] => 3.01
+    [deceso_causa] => Palo cochinero
+    [deceso_fecha] => 2025-08-17
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 
+    [destete_peso] => 0.00
+    [fecha_publicacion] => 
+)
+
+[03-Oct-2025 22:14:16 Europe/Berlin] About to create PDF instance...
+[03-Oct-2025 22:14:16 Europe/Berlin] PDF class instantiated successfully
+[03-Oct-2025 22:14:16 Europe/Berlin] PDF instance created successfully
+[03-Oct-2025 22:14:16 Europe/Berlin] PDF metadata set successfully
+[03-Oct-2025 22:14:16 Europe/Berlin] About to add first PDF page...
+[03-Oct-2025 22:14:16 Europe/Berlin] First PDF page added successfully
+[03-Oct-2025 22:14:16 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Titan_102_2025-10-03_221416.pdf
+[03-Oct-2025 22:14:16 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[03-Oct-2025 22:14:16 Europe/Berlin] Directory exists: Yes
+[03-Oct-2025 22:14:16 Europe/Berlin] Directory writable: Yes
+[03-Oct-2025 22:14:16 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Titan_102_2025-10-03_221416.pdf
+[03-Oct-2025 22:14:16 Europe/Berlin] PDF output completed
+[03-Oct-2025 22:14:16 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Titan_102_2025-10-03_221416.pdf
+[03-Oct-2025 22:14:16 Europe/Berlin] File size: 528986 bytes
+[04-Oct-2025 00:00:46 Europe/Berlin] Attempting to connect to database...
+[04-Oct-2025 00:00:46 Europe/Berlin] Database connection established successfully
+[04-Oct-2025 00:00:46 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[04-Oct-2025 00:00:46 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[04-Oct-2025 00:00:46 Europe/Berlin] About to create PDF instance...
+[04-Oct-2025 00:00:46 Europe/Berlin] PDF class instantiated successfully
+[04-Oct-2025 00:00:46 Europe/Berlin] PDF instance created successfully
+[04-Oct-2025 00:00:46 Europe/Berlin] PDF metadata set successfully
+[04-Oct-2025 00:00:46 Europe/Berlin] About to add first PDF page...
+[04-Oct-2025 00:00:46 Europe/Berlin] First PDF page added successfully
+[04-Oct-2025 00:00:47 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-04_000047.pdf
+[04-Oct-2025 00:00:47 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[04-Oct-2025 00:00:47 Europe/Berlin] Directory exists: Yes
+[04-Oct-2025 00:00:47 Europe/Berlin] Directory writable: Yes
+[04-Oct-2025 00:00:47 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-04_000047.pdf
+[04-Oct-2025 00:00:47 Europe/Berlin] PDF output completed
+[04-Oct-2025 00:00:47 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-04_000047.pdf
+[04-Oct-2025 00:00:47 Europe/Berlin] File size: 412808 bytes
+[04-Oct-2025 00:00:47 Europe/Berlin] Redirecting to: porcino_share.php?file=Flor_101_2025-10-04_000047.pdf&tagid=101
+[14-Oct-2025 20:13:07 Europe/Berlin] Attempting to connect to database...
+[14-Oct-2025 20:13:07 Europe/Berlin] Database connection established successfully
+[14-Oct-2025 20:13:07 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[14-Oct-2025 20:13:07 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[14-Oct-2025 20:13:07 Europe/Berlin] About to create PDF instance...
+[14-Oct-2025 20:13:07 Europe/Berlin] PDF class instantiated successfully
+[14-Oct-2025 20:13:07 Europe/Berlin] PDF instance created successfully
+[14-Oct-2025 20:13:07 Europe/Berlin] PDF metadata set successfully
+[14-Oct-2025 20:13:07 Europe/Berlin] About to add first PDF page...
+[14-Oct-2025 20:13:08 Europe/Berlin] First PDF page added successfully
+[14-Oct-2025 20:13:08 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201308.pdf
+[14-Oct-2025 20:13:08 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[14-Oct-2025 20:13:08 Europe/Berlin] Directory exists: Yes
+[14-Oct-2025 20:13:08 Europe/Berlin] Directory writable: Yes
+[14-Oct-2025 20:13:08 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201308.pdf
+[14-Oct-2025 20:13:08 Europe/Berlin] PDF output completed
+[14-Oct-2025 20:13:08 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201308.pdf
+[14-Oct-2025 20:13:08 Europe/Berlin] File size: 412808 bytes
+[14-Oct-2025 20:17:33 Europe/Berlin] Attempting to connect to database...
+[14-Oct-2025 20:17:33 Europe/Berlin] Database connection established successfully
+[14-Oct-2025 20:17:33 Europe/Berlin] Animal data retrieved successfully: Flor (101)
+[14-Oct-2025 20:17:33 Europe/Berlin] Animal data details: Array
+(
+    [id] => 614
+    [image] => uploads/Cerdito-Rosado1-removebg-preview.png
+    [image2] => uploads/67fc775a40071_1744598874.jpeg
+    [image3] => uploads/67fc775a40af6_1744598874.jpg
+    [video] => 
+    [fecha_nacimiento] => 2024-09-01
+    [peso_nacimiento] => 5.00
+    [especie] => Porcino
+    [nombre] => Flor
+    [tagid] => 101
+    [genero] => Hembra
+    [clase] => Cerda
+    [raza] => Landrace
+    [grupo] => Lactando
+    [estatus] => Muerto
+    [etapa] => Finalizacion
+    [edad] => 4
+    [fecha_compra] => 2024-04-02
+    [peso_compra] => 100.00
+    [precio_compra] => 2.90
+    [fecha_venta] => 2025-04-01
+    [peso_venta] => 520.00
+    [precio_venta] => 3.00
+    [deceso_causa] => Asfixia
+    [deceso_fecha] => 2025-06-01
+    [descarte_fecha] => 
+    [descarte_peso] => 0.00
+    [descarte_precio] => 0.00
+    [destete_fecha] => 2025-08-17
+    [destete_peso] => 150.00
+    [fecha_publicacion] => 
+)
+
+[14-Oct-2025 20:17:33 Europe/Berlin] About to create PDF instance...
+[14-Oct-2025 20:17:33 Europe/Berlin] PDF class instantiated successfully
+[14-Oct-2025 20:17:33 Europe/Berlin] PDF instance created successfully
+[14-Oct-2025 20:17:33 Europe/Berlin] PDF metadata set successfully
+[14-Oct-2025 20:17:33 Europe/Berlin] About to add first PDF page...
+[14-Oct-2025 20:17:33 Europe/Berlin] First PDF page added successfully
+[14-Oct-2025 20:17:33 Europe/Berlin] Attempting to generate PDF at: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201733.pdf
+[14-Oct-2025 20:17:33 Europe/Berlin] Reports directory: C:\xampp\htdocs\porcino/reports
+[14-Oct-2025 20:17:33 Europe/Berlin] Directory exists: Yes
+[14-Oct-2025 20:17:33 Europe/Berlin] Directory writable: Yes
+[14-Oct-2025 20:17:33 Europe/Berlin] About to output PDF to file: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201733.pdf
+[14-Oct-2025 20:17:33 Europe/Berlin] PDF output completed
+[14-Oct-2025 20:17:33 Europe/Berlin] PDF generated successfully: C:\xampp\htdocs\porcino/reports/Flor_101_2025-10-14_201733.pdf
+[14-Oct-2025 20:17:33 Europe/Berlin] File size: 412808 bytes
